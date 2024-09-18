@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Censor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload Word List & Video</h1>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <label for="wordList">Upload Word List:</label>
+        <input type="file" id="wordList" name="wordList" required />
+
+        <label for="video">Upload Video:</label>
+        <input type="file" id="video" name="video" required />
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="status"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
